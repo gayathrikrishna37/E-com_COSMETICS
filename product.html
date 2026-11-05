@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty - Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Glow Beauty</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html">Orders</a>
+        </nav>
+    </header>
+
+    <section class="products-section">
+        <h1>Our Products</h1>
+
+        <div class="filter-section">
+            <label for="categoryFilter">
+                Filter By Category:
+            </label>
+
+            <select id="categoryFilter">
+                <option value="All">All Categories</option>
+                <option value="Skincare">Skincare</option>
+                <option value="Makeup">Makeup</option>
+                <option value="Hair Care">Hair Care</option>
+                <option value="Fragrance">Fragrance</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+        </div>
+
+        <div id="productContainer" class="product-grid">
+        </div>
+    </section>
+
+    <script src="js/products.js"></script>
+</body>
+</html>
