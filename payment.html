@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty - Payment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Glow Beauty</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html">Orders</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+
+    <section class="cart-section">
+        <h1>Checkout</h1>
+
+        <form id="paymentForm">
+            <h2>Delivery Details</h2>
+
+            <label for="customerName">Full Name</label>
+            <input type="text" id="customerName" required>
+
+            <label for="customerEmail">Email</label>
+            <input type="email" id="customerEmail" required>
+
+            <label for="address">Delivery Address</label>
+            <textarea id="address" required></textarea>
+
+            <h2>Payment Method</h2>
+
+            <select id="paymentMethod" required>
+                <option value="">Select Payment Method</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+                <option value="Demo Online Payment">Demo Online Payment</option>
+            </select>
+
+            <h2 id="checkoutTotal">Total: ₹0</h2>
+
+            <button type="submit">
+                Place Order
+            </button>
+        </form>
+    </section>
+
+    <script src="js/payment.js"></script>
+</body>
+</html>
