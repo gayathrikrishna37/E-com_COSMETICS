@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+}
+
+
+/* NAVBAR */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:black;
+    color:white;
+
+    padding:20px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+
+    text-decoration:none;
+    color:white;
+
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:pink;
+}
+
+
+/* HERO */
+
+.hero{
+
+    height:600px;
+
+    background:url("../images/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.hero-content button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    background:hotpink;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+
+/* CATEGORIES */
+
+.categories{
+
+    padding:60px;
+}
+
+.categories h2{
+
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.category-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.card{
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    box-shadow:0px 0px 10px lightgray;
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:scale(1.05);
+}
+
+.card img{
+
+    width:100%;
+    height:250px;
+
+    object-fit:cover;
+}
+
+.card h3{
+
+    text-align:center;
+
+    padding:15px;
+}
+
+
+/* FEATURED PRODUCTS */
+
+.featured{
+
+    padding:60px;
+
+    background:#f8f8f8;
+}
+
+.featured h2{
+
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.featured-container{
+
+    display:flex;
+    gap:20px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+}
+
+.product-card{
+
+    width:300px;
+
+    background:white;
+
+    box-shadow:0px 0px 10px lightgray;
+
+    border-radius:10px;
+
+    overflow:hidden;
+}
+
+.product-card img{
+
+    width:100%;
+    height:300px;
+
+    object-fit:cover;
+}
+
+.product-card h3{
+
+    padding:10px;
+}
+
+.product-card p{
+
+    padding:0 10px 10px;
+}
+
+.product-card button{
+
+    margin:10px;
+
+    padding:10px 20px;
+
+    background:hotpink;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+}
+
+
+/* FOOTER */
+
+footer{
+
+    background:black;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+}
