@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Glow Beauty</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html">Orders</a>
+        </nav>
+    </header>
+
+    <section class="cart-section">
+        <h1>My Cart</h1>
+
+        <div id="cartContainer">
+        </div>
+
+        <div class="cart-summary">
+            <h2 id="totalAmount">Total: ₹0</h2>
+
+            <button onclick="checkout()">
+                Proceed To Checkout
+            </button>
+        </div>
+    </section>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
