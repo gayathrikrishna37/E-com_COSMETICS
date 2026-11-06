@@ -19,14 +19,14 @@ const products = [
         name: "Lipstick",
         category: "Makeup",
         price: 599,
-        image: "https://placehold.co/600x700/EBD5D7/493438?text=Lipstick"
+        image: "images/lipstick.jpg"
     },
     {
         id: 4,
         name: "Foundation",
         category: "Makeup",
         price: 899,
-        image: "https://placehold.co/600x700/EADACB/493438?text=Foundation"
+        image: "images/foundation.jpg"
     },
     {
         id: 5,
